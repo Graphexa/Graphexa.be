@@ -1,11 +1,49 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
+//Color settings
+$color-bg-body-main-1: #7B7B7B;
+$color-bg-body-main-2: #4D565B;
+$color-bg-body-neutraal: #E9EEE7;
+$color-bg-body-dark-neutraal: #211D1A;
+$color-bg-body-accent: #95431E;
+
+$color-text-dark: #211D1A;
+$color-text-light: #E9EEE7;
+$color-text-active:#95431E;
+$color-text-btn: #95431E;
+$color-text-disabled: #B5B5B5;
+
+$color-border: #95431E;
+
+//Font settings
+$font-h1: 'Work Sans', sans-serif;
+$font-h2: 'Work Sans', sans-serif;
+$font-h3: 'Work Sans', sans-serif;
+$font-h4: 'Josefin Sans', sans-serif;
+$font-text: 'Josefin Sans', sans-serif;
+$font-button: 'Josefin Sans', sans-serif;
+
+//Size settings
+$fontsize-text: 1rem;
+$fontsize-header: 1.75rem;
+$fontsize-h1: 2.9863rem;
+$fontsize-h2: 2.4881rem;
+$fontsize-h3: 2.0737rem;
+$fontsize-h4: 1.7281rem;
+$fontsize-nav: 1.125rem;
+$fontsize-btn: 1.2rem;
+$fontsize-socialicons: .8331rem;
+$fontsize-footer: .8331rem;
 
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-
+.navbar-brand{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
@@ -17,7 +55,12 @@
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
-
+.c-nav{
+    &__items{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
