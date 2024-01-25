@@ -65,6 +65,15 @@ $fontsize-footer: .8331rem;
         justify-content: flex-end;
     }
 }
+.c-header{
+    &__hero{
+        background-image: url();
+    }
+    &__title{
+        color: $color-bg-body-neutraal;
+        text-align: center;
+    }
+}
 .c-footer{
     background-color: $color-bg-body-main-1 !important;
     &__heading {

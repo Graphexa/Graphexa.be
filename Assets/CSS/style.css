@@ -32,6 +32,14 @@
   justify-content: flex-end;
 }
 
+.c-header__hero {
+  background-image: url();
+}
+.c-header__title {
+  color: #E9EEE7;
+  text-align: center;
+}
+
 .c-footer {
   background-color: #7B7B7B !important;
 }
