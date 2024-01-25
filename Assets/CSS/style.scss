@@ -51,14 +51,71 @@ $fontsize-footer: .8331rem;
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
-
+.bi-facebook{
+    background-color: #4e71a8 !important;
+    color: #000000 !important;
+}
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
 .c-nav{
+    background-color: $color-bg-body-main-1 !important;
     &__items{
         display: flex;
         justify-content: flex-end;
+    }
+}
+.c-footer{
+    background-color: $color-bg-body-main-1 !important;
+    &__heading {
+        letter-spacing: 2px;
+        position: relative;
+        padding-bottom: 12px;
+        &:after {
+            content: '';
+            width: 25px;
+            border-bottom: 1px solid $color-bg-body-neutraal;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            border-bottom: 1px solid $color-bg-body-accent;
+        }
+    }
+    &__link a {
+        text-decoration: none;
+        color: $color-bg-body-dark-neutraal;
+        line-height: 2.5rem;
+        font-size: 1rem;
+        transition: all 0.5s;
+        &:hover {
+            color: $color-bg-body-accent;
+        }
+    }
+    &__contact {
+        color: $color-bg-body-dark-neutraal;
+        font-size: 1rem;
+    }
+    &__social{
+        font-size: 1rem;
+        height: 2.125rem;
+        width: 2.125rem;
+        line-height: 2.125rem;
+        border-radius: .1875rem;
+        text-align: center;
+        display: inline-block;
+        &--facebook{
+            background-color: #4e71a8;
+            color: #000000 !important;
+        }
+        &--instagram{
+            background-color: #55acee !important;
+            color: #ffffff !important;
+        }
+    }
+    &__listitem{
+        text-decoration: none;
+        display: inline-flex;
     }
 }
 /*---------------------------------------/*
