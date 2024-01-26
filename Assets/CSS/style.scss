@@ -122,13 +122,29 @@ img{
 .c-header{
     &__hero{
         background-image: url(../Images/heroimage.png);
+        background-repeat: none;
         height: 80vh;
-        
+        width: auto;
+        background-position: 50% 50%;
+        background-size: cover;
+        text-align: center;
     }
     &__title{
         color: $color-bg-body-neutraal;
         text-align: center;
         padding-top: 6.25rem;
+        color: $color-text-light;
+    }
+    &__cta{
+        color: $color-text-light;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-top: 30rem;
+        &:hover{
+            background-color: $color-bg-body-neutraal;
+            color: $color-bg-body-accent;
+        }
     }
 }
 .c-main{

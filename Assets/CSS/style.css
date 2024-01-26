@@ -97,12 +97,29 @@ img {
 
 .c-header__hero {
   background-image: url(../Images/heroimage.png);
+  background-repeat: none;
   height: 80vh;
+  width: auto;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
 }
 .c-header__title {
   color: #FFFEF2;
   text-align: center;
   padding-top: 6.25rem;
+  color: #FFFEF2;
+}
+.c-header__cta {
+  color: #FFFEF2;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-top: 30rem;
+}
+.c-header__cta:hover {
+  background-color: #FFFEF2;
+  color: #218085;
 }
 
 .c-main {
