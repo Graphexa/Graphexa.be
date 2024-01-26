@@ -1,6 +1,7 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600&family=Rochester&display=swap");
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
@@ -13,19 +14,65 @@
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
+i {
+  list-style-type: none;
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Rochester", serif;
+  font-size: 2.9863rem;
+}
+
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.4881rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.0737rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.7281rem;
+  font-weight: 400;
+}
+
+h5, h6 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.4063rem;
+  font-weight: 200;
+}
+
+p {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
-.bi-facebook {
-  background-color: #4e71a8 !important;
-  color: #000000 !important;
-}
-
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
 .c-nav {
-  background-color: #7B7B7B !important;
+  background-color: #004145 !important;
 }
 .c-nav__items {
   display: flex;
@@ -33,15 +80,18 @@
 }
 
 .c-header__hero {
-  background-image: url();
+  background-image: url(../Images/heroimage.png);
+  height: 80vh;
 }
 .c-header__title {
-  color: #E9EEE7;
+  color: #FFFEF2;
   text-align: center;
+  padding-top: 6.25rem;
 }
 
 .c-footer {
-  background-color: #7B7B7B !important;
+  background-color: #62BFC4;
+  color: #1A1B1B;
 }
 .c-footer__heading {
   letter-spacing: 2px;
@@ -51,28 +101,29 @@
 .c-footer__heading:after {
   content: "";
   width: 25px;
-  border-bottom: 1px solid #E9EEE7;
+  border-bottom: 1px solid #218085;
   position: absolute;
   left: 0;
   bottom: 0;
   display: block;
-  border-bottom: 1px solid #95431E;
+  border-bottom: 1px solid #218085;
 }
 .c-footer__link a {
   text-decoration: none;
-  color: #211D1A;
+  color: #1A1B1B;
   line-height: 2.5rem;
   font-size: 1rem;
   transition: all 0.5s;
 }
 .c-footer__link a:hover {
-  color: #95431E;
+  color: #218085;
 }
 .c-footer__contact {
-  color: #211D1A;
+  color: #1A1B1B;
   font-size: 1rem;
 }
 .c-footer__social {
+  text-decoration: none;
   font-size: 1rem;
   height: 2.125rem;
   width: 2.125rem;
@@ -80,18 +131,18 @@
   border-radius: 0.1875rem;
   text-align: center;
   display: inline-block;
+  color: #FFFEF2 !important;
 }
-.c-footer__social--facebook {
-  background-color: #4e71a8;
-  color: #000000 !important;
+.c-footer__social:hover {
+  color: #218085 !important;
 }
-.c-footer__social--instagram {
-  background-color: #55acee !important;
-  color: #ffffff !important;
+.c-footer__list {
+  display: flex;
+  margin-left: -2.5rem;
 }
-.c-footer__listitem {
+.c-footer__list__listitem {
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
 }
 
 /*---------------------------------------/*

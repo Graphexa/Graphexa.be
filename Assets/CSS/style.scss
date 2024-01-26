@@ -1,28 +1,28 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600&family=Rochester&display=swap');
 //Color settings
-$color-bg-body-main-1: #7B7B7B;
-$color-bg-body-main-2: #4D565B;
-$color-bg-body-neutraal: #E9EEE7;
-$color-bg-body-dark-neutraal: #211D1A;
-$color-bg-body-accent: #95431E;
+$color-bg-body-main-1: #004145;
+$color-bg-body-main-2: #62BFC4;
+$color-bg-body-neutraal: #FFFEF2;
+$color-bg-body-dark-neutraal: #1A1B1B;
+$color-bg-body-accent: #218085;
 
-$color-text-dark: #211D1A;
-$color-text-light: #E9EEE7;
-$color-text-active:#95431E;
-$color-text-btn: #95431E;
-$color-text-disabled: #B5B5B5;
+$color-text-dark: #1A1B1B;
+$color-text-light: #FFFEF2;
+$color-text-active:#218085;
+$color-text-disabled: #C9C9C9;
 
-$color-border: #95431E;
+$color-border: #218085;
 
 //Font settings
-$font-h1: 'Work Sans', sans-serif;
-$font-h2: 'Work Sans', sans-serif;
-$font-h3: 'Work Sans', sans-serif;
-$font-h4: 'Josefin Sans', sans-serif;
-$font-text: 'Josefin Sans', sans-serif;
-$font-button: 'Josefin Sans', sans-serif;
+$font-h1: 'Rochester', serif;
+$font-h2: 'Catamaran', sans-serif;
+$font-h3: 'Catamaran', sans-serif;
+$font-h4: 'Catamaran', sans-serif;
+$font-text: 'Catamaran', sans-serif;
+$font-button: 'Catamaran', sans-serif;
 
 //Size settings
 $fontsize-text: 1rem;
@@ -31,6 +31,7 @@ $fontsize-h1: 2.9863rem;
 $fontsize-h2: 2.4881rem;
 $fontsize-h3: 2.0737rem;
 $fontsize-h4: 1.7281rem;
+$fontsize-h5-h6: 1.4063rem;
 $fontsize-nav: 1.125rem;
 $fontsize-btn: 1.2rem;
 $fontsize-socialicons: .8331rem;
@@ -47,14 +48,52 @@ $fontsize-footer: .8331rem;
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
-
+i{
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+h1{
+    font-family: $font-h1;
+    font-size: $fontsize-h1;
+}
+h2{
+    font-family: $font-h2;
+    font-size: $fontsize-h2;
+    font-weight: 600;
+}
+h3{
+    font-family: $font-h3;
+    font-size: $fontsize-h3;
+    font-weight: 500;
+}
+h4{
+    font-family: $font-h4;
+    font-size: $fontsize-h4;
+    font-weight: 400;
+}
+h5, h6{
+    font-family: $font-text;
+    font-size: $fontsize-h5-h6;
+    font-weight: 200;
+}
+p{
+    font-family: $font-text;
+    font-size: $fontsize-text;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
-.bi-facebook{
-    background-color: #4e71a8 !important;
-    color: #000000 !important;
-}
+
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
@@ -67,15 +106,19 @@ $fontsize-footer: .8331rem;
 }
 .c-header{
     &__hero{
-        background-image: url();
+        background-image: url(../Images/heroimage.png);
+        height: 80vh;
+        
     }
     &__title{
         color: $color-bg-body-neutraal;
         text-align: center;
+        padding-top: 6.25rem;
     }
 }
 .c-footer{
-    background-color: $color-bg-body-main-1 !important;
+    background-color: $color-bg-body-main-2;
+    color: $color-text-dark;
     &__heading {
         letter-spacing: 2px;
         position: relative;
@@ -83,7 +126,7 @@ $fontsize-footer: .8331rem;
         &:after {
             content: '';
             width: 25px;
-            border-bottom: 1px solid $color-bg-body-neutraal;
+            border-bottom: 1px solid $color-bg-body-accent;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -93,7 +136,7 @@ $fontsize-footer: .8331rem;
     }
     &__link a {
         text-decoration: none;
-        color: $color-bg-body-dark-neutraal;
+        color: $color-text-dark;
         line-height: 2.5rem;
         font-size: 1rem;
         transition: all 0.5s;
@@ -106,6 +149,7 @@ $fontsize-footer: .8331rem;
         font-size: 1rem;
     }
     &__social{
+        text-decoration: none;
         font-size: 1rem;
         height: 2.125rem;
         width: 2.125rem;
@@ -113,18 +157,18 @@ $fontsize-footer: .8331rem;
         border-radius: .1875rem;
         text-align: center;
         display: inline-block;
-        &--facebook{
-            background-color: #4e71a8;
-            color: #000000 !important;
-        }
-        &--instagram{
-            background-color: #55acee !important;
-            color: #ffffff !important;
+        color: $color-text-light !important;
+        &:hover{
+            color: $color-text-active !important;
         }
     }
-    &__listitem{
-        text-decoration: none;
-        display: inline-flex;
+    &__list{
+        display: flex;
+        margin-left: -2.5rem;
+        &__listitem{
+            text-decoration: none;
+            display: flex;
+        }
     }
 }
 /*---------------------------------------/*
