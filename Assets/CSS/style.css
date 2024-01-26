@@ -107,17 +107,19 @@ img {
 
 .c-main {
   display: flex;
-  margin: 3.125rem 0rem;
+  margin: 6.25rem 0rem;
 }
 
 .card {
   width: 20rem;
   height: 20rem;
+  margin-bottom: 6.25rem;
 }
 
 .c-footer {
   background-color: #62BFC4;
   color: #1A1B1B;
+  padding-top: 6.25rem;
 }
 .c-footer__heading {
   letter-spacing: 2px;

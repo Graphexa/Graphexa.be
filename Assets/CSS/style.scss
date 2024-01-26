@@ -133,15 +133,17 @@ img{
 }
 .c-main{
     display: flex;
-    margin: 3.125rem 0rem;
+    margin: 6.25rem 0rem;
 }
 .card{
     width: 20rem;
     height: 20rem;
+    margin-bottom: 6.25rem;
 }
 .c-footer{
     background-color: $color-bg-body-main-2;
     color: $color-text-dark;
+    padding-top: 6.25rem;
     &__heading {
         letter-spacing: 2px;
         position: relative;
