@@ -44,7 +44,9 @@ $fontsize-footer: .8331rem;
     border: none;
     &-icon{
         background-image: url(../Images/list.svg);
-        width: 100%;
+    }
+    &-close{
+        background-image: url(../Images/close.svg);
     }
     &:focus{
         box-shadow: none;

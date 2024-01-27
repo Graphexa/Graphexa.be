@@ -10,7 +10,9 @@
 }
 .navbar-toggler-icon {
   background-image: url(../Images/list.svg);
-  width: 100%;
+}
+.navbar-toggler-close {
+  background-image: url(../Images/close.svg);
 }
 .navbar-toggler:focus {
   box-shadow: none;
