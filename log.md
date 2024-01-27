@@ -24,7 +24,7 @@ Commit 9: Log + Design V0.0.1 + Nav V0.0.3
 ### Commits
 ```
 Commit 10: Header V0.0.5 + Carousel V0.0.1 + Gallery V0.0.1
-
+Commit 11: Favicon V1.0.0 + Carousel V0.0.2 + Gallery V0.0.2 + Nav V0.0.4
 ```
 ## Total hours
 ```

@@ -40,10 +40,22 @@ $fontsize-footer: .8331rem;
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-.navbar-brand{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.navbar-toggler{
+    border: none;
+    &-icon{
+        background-image: url(../Images/list.svg);
+        width: 100%;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+.navbar-toggler>.close {
+    display:inline;
+    border: none;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
 }
 .btn{
     background-color: $color-bg-body-main-1;

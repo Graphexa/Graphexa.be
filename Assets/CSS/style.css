@@ -5,10 +5,24 @@
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
-.navbar-brand {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url(../Images/list.svg);
+  width: 100%;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler > .close {
+  display: inline;
+  border: none;
+}
+
+.navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+  display: none;
 }
 
 .btn {
